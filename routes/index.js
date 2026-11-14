@@ -9,7 +9,15 @@ router.get('/', function(req, res, next) {
 });
 /* GET About page. */
 router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'About Me' });
+
+  // Passes my personal information and media to the About Me view
+  res.render('about', {
+    title: 'About Me',
+    name: 'Hamza Pobal',
+    biography: 'I am currently studying Information Technology Management at Ontario Tech University. I am interested in technology, learning new skills and working with others.',
+    picture: '/images/hamza.jpg',
+    video: '/video/Introduction.mp4'
+  });
 });
 /* GET Projects page. */
 router.get('/projects', function(req, res, next) {
