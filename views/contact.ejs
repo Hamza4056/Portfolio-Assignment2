@@ -1,5 +1,51 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
+<!-- Main content of the Contact Me page -->
+<main class="container pb-5 mb-5">
+    <div class="row">
+        <div class="offset-md-1 col-md-10">
+
+            <h1><%= title %></h1>
+
+            <!-- Contact form that opens an email application -->
+            <form action="mailto:hamza.pobal@ontariotechu.net"
+            method="post" enctype="text/plain">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control"
+                    id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control"
+                    id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Comments</label>
+                    <textarea class="form-control"
+                    id="comments" name="comments" rows="6"
+                    required></textarea>
+                </div>
+
+                <br>
+
+                <!-- Buttons to submit or clear the form -->
+                <button type="submit" class="btn btn-primary">
+                    Submit
+                </button>
+
+                <button type="reset" class="btn btn-secondary">
+                    Reset
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+</main>
+
 <%- include partials/footer.ejs %>
