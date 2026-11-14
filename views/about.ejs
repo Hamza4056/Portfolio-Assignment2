@@ -1,5 +1,24 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
+<h1><%= title %></h1>
+
+<!-- Displays my profile picture -->
+<h2>Introduction</h2>
+
+<img src="/images/hamza.jpg" alt="Photo of Hamza Pobal" width="250">
+
+<!-- Introduction about myself -->
+<p>
+    My name is Hamza Pobal, I am currently studying Information Technology Management at Ontario Tech University.
+    I am interested in technology and learning new skills, as well as working with others.
+</p>
+
+<!-- Displays my introduction video with video controls -->
+<h2>Introduction Video</h2>
+
+<video width="320" height="240" controls poster="/images/hamza.jpg">
+    <source src="/video/Introduction.mp4" type="video/mp4">
+</video>
+
 <%- include partials/footer.ejs %>
