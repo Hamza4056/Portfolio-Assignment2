@@ -7,8 +7,10 @@
 }
 /* Styles the page background and text */
 body {
-     background: linear-gradient(to bottom, #F2E2CE 0%, #23B7D9 100%);
-     padding:0px;
+    background: linear-gradient(to bottom, #F2E2CE 0%, #23B7D9 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding:0px;
     margin:0px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
