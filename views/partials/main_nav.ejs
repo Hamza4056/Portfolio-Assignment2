@@ -1,0 +1,37 @@
+<!-- Navigation bar for all four portfolio pages -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Portfolio</a>
+    <ul class="navbar-nav ms-auto">
+        <!-- Uses the page title to highlight the active navigation link -->
+      <li class="nav-item">
+        <% if (title=="Home") { %>
+          <a class="nav-link active" href="/"><i class="fa-solid fa-house"></i> Home</a>
+        <% } else { %>
+          <a class="nav-link" href="/"><i class="fa-solid fa-house"></i> Home</a>
+        <% } %>
+      </li>
+      <li class="nav-item">
+        <% if (title=="About Me") { %>
+          <a class="nav-link active" href="/about"><i class="fa-solid fa-info"></i> About Me</a>
+        <% } else { %>
+          <a class="nav-link" href="/about"><i class="fa-solid fa-info"></i> About Me</a>
+        <% } %>
+      </li>
+      <li class="nav-item">
+        <% if (title=="Projects") { %>
+          <a class="nav-link active" href="/projects"><i class="fa-brands fa-elementor"></i> Projects</a>
+        <% } else { %>
+          <a class="nav-link" href="/projects"><i class="fa-brands fa-elementor"></i> Projects</a>
+        <% } %>
+      </li>
+      <li class="nav-item">
+        <% if (title=="Contact Me") { %>
+          <a class="nav-link active" href="/contact"><i class="fa-solid fa-phone"></i> Contact Me</a>
+        <% } else { %>
+          <a class="nav-link" href="/contact"><i class="fa-solid fa-phone"></i> Contact Me</a>
+        <% } %>
+      </li>
+    </ul>
+  </div>
+</nav>

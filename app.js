@@ -17,8 +17,10 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+// Allows access to public files such as CSS and images
 app.use(express.static(path.join(__dirname, 'public')));
-
+// Provides access to Bootstrap and Font Awesome
+app.use(express.static(path.join(__dirname,'node_modules')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
