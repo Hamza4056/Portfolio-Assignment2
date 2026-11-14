@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* Controls the main page width */
+#wrapper {
+    width:960px;
+    margin-right:auto;
+    margin-left:auto;
+}
+/* Styles the page background and text */
+body {
+     background: linear-gradient(to bottom, #F2E2CE 0%, #23B7D9 100%);
+     padding:0px;
+    margin:0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Styles the header and footer */
+header {
+    background: linear-gradient(45deg, #F2E2CE 0%, #23B7D9 100%);
+
+}
+
+footer {
+    background-color:#F2E2CE;
+}
+/* Adds spacing to headings and text */
+h1, h2, h3, h4, h5, h6, p, li {
+    padding:15px;
+    margin-left:5px;
+}
+
+.clear {
+    clear:both;
+}
+/* Adds spacing around the video */
+video {
+    margin:15px;
+}
+/* Sets the image size */
+img {
+    width:220px;
+}
+/* Sets the figure width */
+figure {
+    width:220px;
+}
+/* Centers the image caption */
+figcaption {
+    text-align:center;
+}
+
